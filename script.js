@@ -4,7 +4,7 @@ const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
-const count = 0;
+let count = 0;
 
 function showLoadingSpinner() {
   loader.hidden = false;
