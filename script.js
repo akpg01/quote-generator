@@ -25,8 +25,8 @@ async function getQuote() {
   const apiUrl =
     "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
   try {
-    const response = await fetch(proxyUrl + apiUrl);
-    const data = await response.json();
+    let response = await fetch(proxyUrl + apiUrl);
+    let data = await response.json();
     // If Author is blank, add 'Unknown'
     if (data.quoteAuthor === "") {
       authorText.innerText = "Unkknown";
